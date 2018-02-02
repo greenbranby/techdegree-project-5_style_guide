@@ -1,0 +1,19 @@
+/* Base Styles --------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+	margin: 0 em(30px) em(18px);
+	font-weight: $font-wt-regular;
+	font-size: $base-font-size;
+	line-height: 1.5;
+  color: palette(grey, base);
+}
+
+/* Lists------------------ */
+
+ul{
+  list-style-type: none;
+}

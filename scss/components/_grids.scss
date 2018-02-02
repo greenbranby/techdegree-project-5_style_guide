@@ -1,0 +1,63 @@
+/* Grid ------------------ */
+
+@for $i from 1 through $g-col-count {
+    .grid__col--#{$i}.theme__colors{
+        @extend %grid;
+        margin: 0  em(5px) em(50px);
+        &:last-of-type {
+            margin-bottom: em(50px);
+        }
+
+        //margin for grid system
+        @include mq(small) {
+            margin-bottom:em(5px);
+            // margin-right: px(15px);
+            &:last-child {
+                margin-bottom: em(40px);
+            }
+         }
+        }
+      }
+
+
+.grid {
+  @extend %clearfix;
+  width: 90%;
+
+      //Make nested grid 100%
+      [class*="grid__col--"] > & {
+          width: 100%;
+      }
+
+  &__col {
+          @include grid-bg-color;
+      }
+  }
+
+// Calculate grid columns
+.grid__col {
+      @include mq(medium){
+        @include g-columns;
+  }
+}
+
+
+//flex for grids
+
+.grid {
+    @include mq(medium) {
+        @include e(row) {
+            @include flex(flex, $just: space-between);
+            .centered {
+                display: block;
+                margin: auto;
+            }
+        }
+      }
+}
+
+.theme__colors{
+    @include mq(medium){
+      text-align: center;
+    }
+}

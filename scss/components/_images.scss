@@ -1,0 +1,27 @@
+/* Image Styles ------------------ */
+
+.img--logo {
+  @extend %marg-auto;
+  display: block;
+  padding: em(35px) 0;
+}
+
+.img--avatar {
+  @extend %marg-auto;
+  display: block;
+  padding: em(25px);
+
+  @include mq(medium){
+    margin-right: em(50px);
+  }
+}
+
+.img--frame {
+  width: 100%;
+  padding: em(15px);
+  border: solid em(1px) lightgrey;
+
+  @include mq(medium){
+    margin-left: em(50px);
+  }
+}

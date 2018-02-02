@@ -1,0 +1,29 @@
+
+/* Button Styles------------------ */
+.btn {
+  @include bg-colors($ui-colors);
+  @include m(default) {
+    margin-top: em(20px);
+  }
+}
+
+[class^="btn--"] {
+  @extend %btn;
+    margin-bottom: em(20px), em(14px);
+
+  @include mq(small) {
+    margin-top: em(12px);
+    margin-bottom: em(12px);
+  }
+}
+
+.grid__col{
+  @include mq(medium){
+        @include m(12) {
+            .theme__colors {
+                margin: em(30px) em(16px);
+            }
+            @include flex(flex);
+        }
+      }
+}

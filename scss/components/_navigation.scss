@@ -1,0 +1,35 @@
+/* Navigation Styles --------------------- */
+
+.nav {
+  @extend %center-align;
+  margin: 0;
+  padding:  0 0 em(70px);
+  // padding:20px;
+  @include mq(medium){
+    display: flex;
+    flex-flow: row;
+    justify-content:space-around;
+    margin: em(65px) 0 0 em(200px);
+    width: 60%;
+}
+
+    @include e(item)  {
+      border-radius: .4em;
+      padding: em(12px) em(20px);
+
+
+      a {
+          text-decoration: none;
+          display: block;
+          color: $black;
+          font-weight: $font-wt-light;
+          font-size: 1em;
+      }
+
+      &:first-child {
+        background-color: $viking;
+        a {color: white;
+      }
+    }
+  }
+}

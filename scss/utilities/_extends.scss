@@ -1,0 +1,46 @@
+// Screen readers
+%srt {
+    visibility: hidden;
+}
+
+// Center text
+%center-align {
+  text-align: center;
+}
+
+
+/* Float Clearfix ------------------ */
+%clearfix
+    .group:after {
+      content: "";
+      display: table;
+      clear: both;
+}
+
+// Grid styles
+%grid {
+    color: palette(grey, base);
+    padding: em(10px) em(25px);
+    border: 0;
+    border-radius: .4em;
+    font-size : 1em;
+    font-weight:$font-wt-bold;
+    display: block;
+}
+
+%btn {
+    color: $white;
+    margin-bottom: em(20px);
+    width: 100%;
+    padding: em(10px) em(25px);
+    border: 0;
+    border-radius: .4em;
+    font-size : 1em;
+    font-weight:$font-wt-regular;
+    text-transform: uppercase;
+    display: block;
+      }
+
+%marg-auto {
+  margin: 0 auto;
+}
