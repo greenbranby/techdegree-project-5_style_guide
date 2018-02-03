@@ -1,15 +1,21 @@
 /* Form Styles --------------------- */
 
-.form__label--hidden {
-    visibility: hidden;
-    @extend %srt;
-}
+.form {
+    @include e(label) {
+      @include m(hidden) {
+        @extend %srt;
+      }
+      @include mq(medium){
+         width: 100%;
+      }
+    }
 
-form{
-  @include mq(medium){
-     width: 100%;
-  }
 }
+// form{
+//   @include mq(medium){
+//      width: 100%;
+//   }
+// }
 
 input[type="text"],
 input[type="password"]

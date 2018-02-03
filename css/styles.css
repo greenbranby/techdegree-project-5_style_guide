@@ -530,11 +530,8 @@ blockquote {
       margin-left: 2.7777777778em; } }
 
 /* Form Styles --------------------- */
-.form__label--hidden {
-  visibility: hidden; }
-
 @media (min-width: 769px) {
-  form {
+  .form__label {
     width: 100%; } }
 
 input[type="text"],
