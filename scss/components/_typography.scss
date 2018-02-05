@@ -42,6 +42,11 @@
   }
 
   .card {
+    p{
+      margin: 0 em(30px) em(18px);
+    	font-weight: $font-wt-regular;
+      color: palette(grey, base);
+    }
       @include mq(medium){
         text-align: left;
       }

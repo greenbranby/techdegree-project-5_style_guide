@@ -1,41 +1,4 @@
 /* Global Imports --------------------- */
-.form__label--hidden {
-  visibility: hidden; }
-
-.nav {
-  text-align: center; }
-
-/* Float Clearfix ------------------ */
-.grid
-.group:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.grid__col--1.theme__colors, .grid__col--2.theme__colors, .grid__col--3.theme__colors, .grid__col--4.theme__colors, .grid__col--5.theme__colors, .grid__col--6.theme__colors, .grid__col--7.theme__colors, .grid__col--8.theme__colors, .grid__col--9.theme__colors, .grid__col--10.theme__colors, .grid__col--11.theme__colors, .grid__col--12.theme__colors {
-  color: #878787;
-  padding: 0.5555555556em 1.3888888889em;
-  border: 0;
-  border-radius: .4em;
-  font-size: 1em;
-  font-weight: 500;
-  display: block; }
-
-[class^="btn--"] {
-  color: #fff;
-  margin-bottom: 1.1111111111em;
-  width: 100%;
-  padding: 0.5555555556em 1.3888888889em;
-  border: 0;
-  border-radius: .4em;
-  font-size: 1em;
-  font-weight: 400;
-  text-transform: uppercase;
-  display: block; }
-
-.container, .img--logo, .img--avatar {
-  margin: 0 auto; }
-
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -432,15 +395,49 @@ template {
   box-sizing: border-box; }
 
 p {
-  margin: 0 1.6666666667em 1em;
-  font-weight: 400;
   font-size: 18px;
-  line-height: 1.5;
-  color: #878787; }
+  line-height: 1.5; }
 
 /* Lists------------------ */
 ul {
   list-style-type: none; }
+
+.form__label--hidden {
+  visibility: hidden; }
+
+.nav {
+  text-align: center; }
+
+/* Float Clearfix ------------------ */
+.grid
+.group:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.grid__col--1.theme__colors, .grid__col--2.theme__colors, .grid__col--3.theme__colors, .grid__col--4.theme__colors, .grid__col--5.theme__colors, .grid__col--6.theme__colors, .grid__col--7.theme__colors, .grid__col--8.theme__colors, .grid__col--9.theme__colors, .grid__col--10.theme__colors, .grid__col--11.theme__colors, .grid__col--12.theme__colors {
+  color: #878787;
+  padding: 0.5555555556em 1.3888888889em;
+  border: 0;
+  border-radius: .4em;
+  font-size: 1em;
+  font-weight: 500;
+  display: block; }
+
+[class^="btn--"] {
+  color: #fff;
+  margin-bottom: 1.1111111111em;
+  width: 100%;
+  padding: 0.5555555556em 1.3888888889em;
+  border: 0;
+  border-radius: .4em;
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: block; }
+
+.container, .img--logo, .img--avatar {
+  margin: 0 auto; }
 
 /* Navigation Styles --------------------- */
 .nav {
@@ -505,6 +502,10 @@ blockquote {
   font-weight: 600;
   text-decoration: none; }
 
+.card p {
+  margin: 0 1.6666666667em 1em;
+  font-weight: 400;
+  color: #878787; }
 @media (min-width: 769px) {
   .card {
     text-align: left; } }
