@@ -4,7 +4,6 @@
   @extend %center-align;
   margin: 0;
   padding:  0 0 em(70px);
-  // padding:20px;
   @include mq(medium){
     display: flex;
     flex-flow: row;
@@ -16,7 +15,6 @@
     @include e(item)  {
       border-radius: .4em;
       padding: em(12px) em(20px);
-
 
       a {
           text-decoration: none;

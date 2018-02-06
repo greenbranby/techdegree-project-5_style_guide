@@ -395,12 +395,13 @@ template {
   box-sizing: border-box; }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5; }
 
 /* Lists------------------ */
 ul {
-  list-style-type: none; }
+  list-style-type: none;
+  padding: 0; }
 
 .form__label--hidden {
   visibility: hidden; }
@@ -485,7 +486,7 @@ ul {
   margin-top: 2.7777777778em;
   margin-left: 1.6666666667em; }
 
-blockquote {
+.blockquote {
   margin: 1.7777777778em 1.6666666667em 2.7777777778em 1.9444444444em;
   padding: 0 0 0 5%;
   border-left: 0.5555555556em solid #58e1c1;
